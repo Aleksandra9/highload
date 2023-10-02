@@ -1,0 +1,1161 @@
+{
+	"info": {
+		"_postman_id": "52ba7504-94a8-40da-81fb-eafede537464",
+		"name": "Highload (social network)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15867547"
+	},
+	"item": [
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"1047eac4-de9f-433a-9988-8cf194f9458b\",\n    \"password\": \"test\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"fd380a8d-7461-445f-a1a8-b484f79e87e3\",\n    \"password\": \"test\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 29 Sep 2023 10:31:54 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": \"eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJzZWxmIiwic3ViIjoiZmQzODBhOGQtNzQ2MS00NDVmLWExYTgtYjQ4NGY3OWU4N2UzIiwiZXhwIjoxNjk1OTg1MzE0LCJpYXQiOjE2OTU5ODM1MTQsInNjb3BlIjoiW3JlYWRdIn0.bybaFfCyyCg7mMtz4wWY7viW-qx_lGEOLS8302QKzvqcFIY82rC-otG2O592CDtMGVGLSYF8BC8fOV7DfogMfkj3q4pQkMOJh3nLBPyo_tS_aCfQ_YjEq3Sqc06ks3nEoA8tKoWdm8bsMNEN7ETjyK90r429jlzW_qYfiqqJlt090sJlyS17RFoVxYYUTntajt_QkkF3vd5esvfwQg5tZFeRKDGYPL60mp8rk440LmsinV0jLSn6na9kDcWGoZFWGh4LEsaf6ZkH8_8uEOGyzzZNU5GJDGfl0Q3LPlJWj6IcATqZaQD5sTO37xqP0a5bDVcGIn8jXZzf6f0g1ML32A\"\n}"
+				}
+			]
+		},
+		{
+			"name": "user/register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"first_name\": \"Роберт\",\n    \"second_name\": \"Абрамов\",\n    \"age\": 11,\n    \"birthdate\": null,\n    \"biography\": \"\",\n    \"city\": \"Воткинск\",\n    \"password\": \"Роберт\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/user/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"register"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "register",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"first_name\": \"Роберт\",\n    \"second_name\": \"Абрамов\",\n    \"age\": 11,\n    \"birthdate\": null,\n    \"biography\": \"\",\n    \"city\": \"Воткинск\",\n    \"password\": \"Роберт\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/user/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"register"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 29 Sep 2023 10:35:19 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": \"eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJzZWxmIiwic3ViIjoiNjUyNGY2MGMtNjQyYi00OTM4LWE3NzktOWZmODc3M2M1ZTdkIiwiZXhwIjoxNjk1OTg1NTE5LCJpYXQiOjE2OTU5ODM3MTksInNjb3BlIjoiW3JlYWRdIn0.UXSPg_-09TegdQ8jURr-vmM0yvcloQhvWm_5trdIx9WKLvmDqdDhzqJA5ezSCo7EV07QkBgunU0nRqKuXq8YO0wDvmHoBuq_hejWUDfk0RL_DEKIoDNzwqLqFBWMtwQwamVRMVHVlvuD7pRjstsy0-IlxzOzSw3a8n-Gn6ODy5z_bGdcrF2zCHbG-akYksmkQIcPfL9dycNG6IC-OaTZwJh32XLFzEhfpflkGhWCwMqpbXmqnXSrFyzomJFhXzG__YGBEkHYLYUa1fqtjSfJ4Az5I-X500eG_9lJN5pAc_6_kYBIEnER2GzoB-WVpIO_UkmrReXj28TPQxv6OZA_9w\"\n}"
+				}
+			]
+		},
+		{
+			"name": "user/get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/user/get/fd380a8d-7461-445f-a1a8-b484f79e87e3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"get",
+						"fd380a8d-7461-445f-a1a8-b484f79e87e3"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "get",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/user/get/fd380a8d-7461-445f-a1a8-b484f79e87e3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"get",
+								"fd380a8d-7461-445f-a1a8-b484f79e87e3"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 29 Sep 2023 10:36:21 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": \"fd380a8d-7461-445f-a1a8-b484f79e87e3\",\n    \"first_name\": \"Ксения\",\n    \"second_name\": \"Иванова\",\n    \"age\": 97,\n    \"birthdate\": null,\n    \"biography\": null,\n    \"city\": \"Донской\"\n}"
+				}
+			]
+		},
+		{
+			"name": "user/search",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/user/search?first_name=С&last_name=Ив",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"search"
+					],
+					"query": [
+						{
+							"key": "first_name",
+							"value": "С"
+						},
+						{
+							"key": "last_name",
+							"value": "Ив"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "test",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8084/user/search?first_name=Ив&last_name=Ив",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"user",
+								"search"
+							],
+							"query": [
+								{
+									"key": "first_name",
+									"value": "Ив"
+								},
+								{
+									"key": "last_name",
+									"value": "Ив"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 13 Sep 2023 07:52:00 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": \"17aebfa6-8ec7-49ec-a2db-9448847809c6\",\n        \"first_name\": \"Иван\",\n        \"second_name\": \"Иванович\",\n        \"age\": 10,\n        \"birthdate\": null,\n        \"biography\": null,\n        \"city\": null\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "post/create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJzZWxmIiwic3ViIjoiZmQzODBhOGQtNzQ2MS00NDVmLWExYTgtYjQ4NGY3OWU4N2UzIiwiZXhwIjoxNzI3NTIwMTA0LCJpYXQiOjE2OTU5ODQyNjgsInNjb3BlIjoiW3JlYWRdIn0.PZ2dMVAAZPlv9wR_H8dfmXzJJj7d7Qf6sOgzChzbeGrvdpV2EFjFYrejlI0kudqEt9022C-2RYX7j0G_3_LsBjlahJhtuu7p8UIhM9at8_uNbxz6DLpVmixOi0eGUF4bEilvN_Ek7PdIevd7ReAE5T6B8ePvn5g9Kz43-cLj7X_idGMrTuYWpW1GRZTjqE_u9f7RXNYkLxC2yYpO4j9FtIfKKKsin8KTBfAd4LkVBHTtV3Lon82h8lM8oVYftGyLwW_rqCucnIvvRUqKbzmi_aZrHcHMbgHBo35kWs8SEp1YxxobUDMkp3DJH67dwEyrjfHgiR6vyJ6UG75PgyMBHg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"text\": \"New post\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/post/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"post",
+						"create"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "create",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJzZWxmIiwic3ViIjoiZmQzODBhOGQtNzQ2MS00NDVmLWExYTgtYjQ4NGY3OWU4N2UzIiwiZXhwIjoxNzI3NTIwMTA0LCJpYXQiOjE2OTU5ODQyNjgsInNjb3BlIjoiW3JlYWRdIn0.PZ2dMVAAZPlv9wR_H8dfmXzJJj7d7Qf6sOgzChzbeGrvdpV2EFjFYrejlI0kudqEt9022C-2RYX7j0G_3_LsBjlahJhtuu7p8UIhM9at8_uNbxz6DLpVmixOi0eGUF4bEilvN_Ek7PdIevd7ReAE5T6B8ePvn5g9Kz43-cLj7X_idGMrTuYWpW1GRZTjqE_u9f7RXNYkLxC2yYpO4j9FtIfKKKsin8KTBfAd4LkVBHTtV3Lon82h8lM8oVYftGyLwW_rqCucnIvvRUqKbzmi_aZrHcHMbgHBo35kWs8SEp1YxxobUDMkp3DJH67dwEyrjfHgiR6vyJ6UG75PgyMBHg",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"text\": \"New post\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/post/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"post",
+								"create"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "36"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 29 Sep 2023 10:53:21 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "cba4f52d-b08a-40cc-be99-1ce4c76d40fa"
+				}
+			]
+		},
+		{
+			"name": "post/delete",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJzZWxmIiwic3ViIjoiZmQzODBhOGQtNzQ2MS00NDVmLWExYTgtYjQ4NGY3OWU4N2UzIiwiZXhwIjoxNzI3NTIwMTA0LCJpYXQiOjE2OTU5ODQyNjgsInNjb3BlIjoiW3JlYWRdIn0.PZ2dMVAAZPlv9wR_H8dfmXzJJj7d7Qf6sOgzChzbeGrvdpV2EFjFYrejlI0kudqEt9022C-2RYX7j0G_3_LsBjlahJhtuu7p8UIhM9at8_uNbxz6DLpVmixOi0eGUF4bEilvN_Ek7PdIevd7ReAE5T6B8ePvn5g9Kz43-cLj7X_idGMrTuYWpW1GRZTjqE_u9f7RXNYkLxC2yYpO4j9FtIfKKKsin8KTBfAd4LkVBHTtV3Lon82h8lM8oVYftGyLwW_rqCucnIvvRUqKbzmi_aZrHcHMbgHBo35kWs8SEp1YxxobUDMkp3DJH67dwEyrjfHgiR6vyJ6UG75PgyMBHg",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/post/delete/4263b95d-aeb0-4b9e-868d-82de15a5a1c1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"post",
+						"delete",
+						"4263b95d-aeb0-4b9e-868d-82de15a5a1c1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "delete",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJzZWxmIiwic3ViIjoiZmQzODBhOGQtNzQ2MS00NDVmLWExYTgtYjQ4NGY3OWU4N2UzIiwiZXhwIjoxNzI3NTIwMTA0LCJpYXQiOjE2OTU5ODQyNjgsInNjb3BlIjoiW3JlYWRdIn0.PZ2dMVAAZPlv9wR_H8dfmXzJJj7d7Qf6sOgzChzbeGrvdpV2EFjFYrejlI0kudqEt9022C-2RYX7j0G_3_LsBjlahJhtuu7p8UIhM9at8_uNbxz6DLpVmixOi0eGUF4bEilvN_Ek7PdIevd7ReAE5T6B8ePvn5g9Kz43-cLj7X_idGMrTuYWpW1GRZTjqE_u9f7RXNYkLxC2yYpO4j9FtIfKKKsin8KTBfAd4LkVBHTtV3Lon82h8lM8oVYftGyLwW_rqCucnIvvRUqKbzmi_aZrHcHMbgHBo35kWs8SEp1YxxobUDMkp3DJH67dwEyrjfHgiR6vyJ6UG75PgyMBHg",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/post/delete/4263b95d-aeb0-4b9e-868d-82de15a5a1c1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"post",
+								"delete",
+								"4263b95d-aeb0-4b9e-868d-82de15a5a1c1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "0"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 29 Sep 2023 10:57:05 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "post/feed",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJzZWxmIiwic3ViIjoiMTA0N2VhYzQtZGU5Zi00MzNhLTk5ODgtOGNmMTk0Zjk0NThiIiwiZXhwIjoxNzI3NTIwMTA0LCJpYXQiOjE2OTYyMzg1OTQsInNjb3BlIjoiW3JlYWRdIn0.GqJWdyNknqI5yL5Rcw-gZljzfswypir1JYu41gb9xUIyB2nbQ2WgNuRCPCvPdTsJOZl4xYXvj02YcbaPwQOQCqTqbmH8LqpIYVobdoBHQegSvCKgiL9T-JuO16t70tbp144Mr3FsdXLvgEhF8LGjiTjgg1U150nonRb2q2h0rki4GRVMTWJT21oe0T-2SqqSTSrwVerqPRXW5XAH3YDXUC54ADt2ojM-R3z4eqS9it5Cec7pPtFa62hE8_iTc_pH_QwW8xa5RGvpUmmRFcKv78f4WUJJY3yj-NO5tdtzirOhIEJCNnODZt2zTO0aGqosnkjvBfFFy_EoQl2uqqHqqQ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/post/feed",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"post",
+						"feed"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "feed",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJzZWxmIiwic3ViIjoiMTA0N2VhYzQtZGU5Zi00MzNhLTk5ODgtOGNmMTk0Zjk0NThiIiwiZXhwIjoxNzI3NTIwMTA0LCJpYXQiOjE2OTYyMzg1OTQsInNjb3BlIjoiW3JlYWRdIn0.GqJWdyNknqI5yL5Rcw-gZljzfswypir1JYu41gb9xUIyB2nbQ2WgNuRCPCvPdTsJOZl4xYXvj02YcbaPwQOQCqTqbmH8LqpIYVobdoBHQegSvCKgiL9T-JuO16t70tbp144Mr3FsdXLvgEhF8LGjiTjgg1U150nonRb2q2h0rki4GRVMTWJT21oe0T-2SqqSTSrwVerqPRXW5XAH3YDXUC54ADt2ojM-R3z4eqS9it5Cec7pPtFa62hE8_iTc_pH_QwW8xa5RGvpUmmRFcKv78f4WUJJY3yj-NO5tdtzirOhIEJCNnODZt2zTO0aGqosnkjvBfFFy_EoQl2uqqHqqQ",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/post/feed",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"post",
+								"feed"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 29 Sep 2023 10:59:06 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": \"8ffd778d-e577-4b6e-a6b3-40642ae29538\",\n        \"text\": \"Message 8\",\n        \"author_user_id\": \"ad5635e1-efd6-4783-a851-efd1125d43b5\"\n    },\n    {\n        \"id\": \"02ed35f5-a102-4b1b-8344-a8604789124c\",\n        \"text\": \"Message 7\",\n        \"author_user_id\": \"ad5635e1-efd6-4783-a851-efd1125d43b5\"\n    },\n    {\n        \"id\": \"d1ee2c64-8eab-4f68-a729-990e685d0358\",\n        \"text\": \"Message 6\",\n        \"author_user_id\": \"ad5635e1-efd6-4783-a851-efd1125d43b5\"\n    },\n    {\n        \"id\": \"486fb3d2-df6a-4557-b204-c8831e5cb4f0\",\n        \"text\": \"Message 6\",\n        \"author_user_id\": \"ad5635e1-efd6-4783-a851-efd1125d43b5\"\n    },\n    {\n        \"id\": \"cf22871e-a0b2-4e93-be09-f24cf54850f5\",\n        \"text\": \"Sed augue lacus viverra vitae congue eu consequat. Volutpat blandit aliquam etiam erat velit. Pulvinar elementum integer enim neque. Sit amet luctus venenatis lectus magna fringilla urna. Nisl vel pretium lectus quam id leo in vitae. Eget egestas purus viverra accumsan. Vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant. Donec enim diam vulputate ut pharetra sit. Tortor posuere ac ut consequat semper viverra nam libero. Odio euismod lacinia at quis risus sed vulputate odio ut. Egestas tellus rutrum tellus pellentesque eu tincidunt. Aliquam ultrices sagittis orci a scelerisque purus semper eget.\",\n        \"author_user_id\": \"a9aa5968-6452-4702-8141-d33b8502eda7\"\n    },\n    {\n        \"id\": \"8fa6eae4-b7c8-4589-8edc-11aabec1c15c\",\n        \"text\": \"Cursus in hac habitasse platea. Venenatis tellus in metus vulputate eu. Integer vitae justo eget magna fermentum iaculis eu. Fermentum leo vel orci porta non pulvinar neque laoreet. Scelerisque purus semper eget duis at tellus at urna. In dictum non consectetur a erat. Convallis a cras semper auctor neque vitae tempus quam. Eget mauris pharetra et ultrices neque ornare aenean euismod. Leo a diam sollicitudin tempor id eu nisl nunc mi. Quis viverra nibh cras pulvinar mattis nunc. Malesuada fames ac turpis egestas. Sodales neque sodales ut etiam sit. Scelerisque fermentum dui faucibus in ornare. Nunc lobortis mattis aliquam faucibus purus in massa. Malesuada proin libero nunc consequat interdum varius. Nunc eget lorem dolor sed. Tincidunt lobortis feugiat vivamus at augue eget arcu dictum. Enim praesent elementum facilisis leo vel fringilla est. Amet consectetur adipiscing elit pellentesque habitant morbi. Consectetur a erat nam at lectus urna duis convallis convallis.\",\n        \"author_user_id\": \"c7d69fa8-58a8-42fe-9efa-5783dbfd48e0\"\n    },\n    {\n        \"id\": \"eed41574-304a-4267-959e-b548ec5ede58\",\n        \"text\": \"Nulla malesuada pellentesque elit eget gravida cum. Donec enim diam vulputate ut pharetra sit amet. Vitae et leo duis ut. Blandit aliquam etiam erat velit scelerisque in dictum non consectetur. Scelerisque in dictum non consectetur. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. Duis ut diam quam nulla porttitor massa. Netus et malesuada fames ac. Sagittis orci a scelerisque purus semper.\",\n        \"author_user_id\": \"7d134113-6c79-47d2-b653-78c9935d8e3b\"\n    },\n    {\n        \"id\": \"0fa8ab6d-3578-4d48-a768-d4fcf5857b5e\",\n        \"text\": \"Mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa. Diam ut venenatis tellus in metus vulputate. Nullam vehicula ipsum a arcu. Vitae tempus quam pellentesque nec nam aliquam sem et. Egestas erat imperdiet sed euismod nisi porta. Lectus arcu bibendum at varius. Iaculis urna id volutpat lacus laoreet. Amet luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor. Et sollicitudin ac orci phasellus egestas tellus rutrum tellus pellentesque. Sed pulvinar proin gravida hendrerit lectus a. Viverra maecenas accumsan lacus vel facilisis. Magna etiam tempor orci eu. Id semper risus in hendrerit gravida rutrum. Eget mauris pharetra et ultrices neque ornare aenean. Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque purus. Integer enim neque volutpat ac tincidunt vitae semper quis. Ultrices in iaculis nunc sed augue lacus. Tempor commodo ullamcorper a lacus vestibulum.\",\n        \"author_user_id\": \"cfb6a272-2174-4839-967c-8781e9e8f888\"\n    },\n    {\n        \"id\": \"27c2882c-8608-4e8b-a951-d1c510a045c8\",\n        \"text\": \"Orci a scelerisque purus semper eget duis. Pellentesque elit ullamcorper dignissim cras tincidunt. Egestas egestas fringilla phasellus faucibus scelerisque. Laoreet non curabitur gravida arcu ac tortor dignissim. Morbi non arcu risus quis varius quam quisque id diam. Curabitur gravida arcu ac tortor dignissim convallis aenean et tortor. Quis blandit turpis cursus in hac habitasse platea dictumst quisque. Diam maecenas sed enim ut. Amet mattis vulputate enim nulla aliquet porttitor. Sed id semper risus in hendrerit gravida rutrum. Vulputate enim nulla aliquet porttitor lacus luctus. Molestie at elementum eu facilisis sed. Nulla pharetra diam sit amet nisl.\",\n        \"author_user_id\": \"83c0f061-9784-4f57-8b3d-e704c33b5202\"\n    },\n    {\n        \"id\": \"66e3d949-e897-4eda-90c6-3f46862d0ae0\",\n        \"text\": \"Nunc id cursus metus aliquam eleifend mi in nulla. Aliquet nibh praesent tristique magna sit amet purus gravida quis. Facilisi etiam dignissim diam quis enim. Facilisi nullam vehicula ipsum a arcu. A scelerisque purus semper eget duis at tellus. Vel orci porta non pulvinar. Sed blandit libero volutpat sed cras ornare arcu dui. Ut pharetra sit amet aliquam id. Condimentum lacinia quis vel eros donec ac. Porttitor leo a diam sollicitudin tempor id eu nisl nunc.\",\n        \"author_user_id\": \"51834c91-e26e-46af-9b83-ef0421f8b126\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "post/get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/post/get/e1587ec3-8b4a-4926-991e-1bfce1a65273",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"post",
+						"get",
+						"e1587ec3-8b4a-4926-991e-1bfce1a65273"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "get",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/post/get/e1587ec3-8b4a-4926-991e-1bfce1a65273",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"post",
+								"get",
+								"e1587ec3-8b4a-4926-991e-1bfce1a65273"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 29 Sep 2023 11:01:50 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": \"f33b623d-764b-49d7-9ca3-f0a92840ef0f\",\n    \"text\": \"Praesent elementum facilisis leo vel. Arcu non odio euismod lacinia at. Enim lobortis scelerisque fermentum dui faucibus. Egestas pretium aenean pharetra magna. Pulvinar elementum integer enim neque volutpat ac. Turpis nunc eget lorem dolor sed viverra ipsum nunc aliquet. Nulla pharetra diam sit amet. Tellus orci ac auctor augue mauris augue. Aliquam id diam maecenas ultricies mi. Dictum at tempor commodo ullamcorper a lacus. Enim tortor at auctor urna nunc id cursus metus aliquam. Condimentum mattis pellentesque id nibh tortor id aliquet lectus proin. Etiam tempor orci eu lobortis elementum nibh tellus. Mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan tortor. Quisque non tellus orci ac. Praesent elementum facilisis leo vel fringilla est ullamcorper. Mattis pellentesque id nibh tortor.\",\n    \"author_user_id\": \"fd380a8d-7461-445f-a1a8-b484f79e87e3\"\n}"
+				}
+			]
+		},
+		{
+			"name": "post/update",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJzZWxmIiwic3ViIjoiZmQzODBhOGQtNzQ2MS00NDVmLWExYTgtYjQ4NGY3OWU4N2UzIiwiZXhwIjoxNzI3NTIwMTA0LCJpYXQiOjE2OTU5ODQyNjgsInNjb3BlIjoiW3JlYWRdIn0.PZ2dMVAAZPlv9wR_H8dfmXzJJj7d7Qf6sOgzChzbeGrvdpV2EFjFYrejlI0kudqEt9022C-2RYX7j0G_3_LsBjlahJhtuu7p8UIhM9at8_uNbxz6DLpVmixOi0eGUF4bEilvN_Ek7PdIevd7ReAE5T6B8ePvn5g9Kz43-cLj7X_idGMrTuYWpW1GRZTjqE_u9f7RXNYkLxC2yYpO4j9FtIfKKKsin8KTBfAd4LkVBHTtV3Lon82h8lM8oVYftGyLwW_rqCucnIvvRUqKbzmi_aZrHcHMbgHBo35kWs8SEp1YxxobUDMkp3DJH67dwEyrjfHgiR6vyJ6UG75PgyMBHg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"e1587ec3-8b4a-4926-991e-1bfce1a65273\",\n    \"text\": \"New post\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/post/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"post",
+						"update"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "update",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJzZWxmIiwic3ViIjoiZmQzODBhOGQtNzQ2MS00NDVmLWExYTgtYjQ4NGY3OWU4N2UzIiwiZXhwIjoxNzI3NTIwMTA0LCJpYXQiOjE2OTU5ODQyNjgsInNjb3BlIjoiW3JlYWRdIn0.PZ2dMVAAZPlv9wR_H8dfmXzJJj7d7Qf6sOgzChzbeGrvdpV2EFjFYrejlI0kudqEt9022C-2RYX7j0G_3_LsBjlahJhtuu7p8UIhM9at8_uNbxz6DLpVmixOi0eGUF4bEilvN_Ek7PdIevd7ReAE5T6B8ePvn5g9Kz43-cLj7X_idGMrTuYWpW1GRZTjqE_u9f7RXNYkLxC2yYpO4j9FtIfKKKsin8KTBfAd4LkVBHTtV3Lon82h8lM8oVYftGyLwW_rqCucnIvvRUqKbzmi_aZrHcHMbgHBo35kWs8SEp1YxxobUDMkp3DJH67dwEyrjfHgiR6vyJ6UG75PgyMBHg",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"e1587ec3-8b4a-4926-991e-1bfce1a65273\",\n    \"text\": \"New post\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/post/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"post",
+								"update"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "0"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 29 Sep 2023 11:01:02 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "friend/delete",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJzZWxmIiwic3ViIjoiMTA0N2VhYzQtZGU5Zi00MzNhLTk5ODgtOGNmMTk0Zjk0NThiIiwiZXhwIjoxNzI3NTIwMTA0LCJpYXQiOjE2OTYyMzg1OTQsInNjb3BlIjoiW3JlYWRdIn0.GqJWdyNknqI5yL5Rcw-gZljzfswypir1JYu41gb9xUIyB2nbQ2WgNuRCPCvPdTsJOZl4xYXvj02YcbaPwQOQCqTqbmH8LqpIYVobdoBHQegSvCKgiL9T-JuO16t70tbp144Mr3FsdXLvgEhF8LGjiTjgg1U150nonRb2q2h0rki4GRVMTWJT21oe0T-2SqqSTSrwVerqPRXW5XAH3YDXUC54ADt2ojM-R3z4eqS9it5Cec7pPtFa62hE8_iTc_pH_QwW8xa5RGvpUmmRFcKv78f4WUJJY3yj-NO5tdtzirOhIEJCNnODZt2zTO0aGqosnkjvBfFFy_EoQl2uqqHqqQ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/friend/delete/08b3ba8f-1d05-4203-b7bf-89cf97115035",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"friend",
+						"delete",
+						"08b3ba8f-1d05-4203-b7bf-89cf97115035"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "delete",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJzZWxmIiwic3ViIjoiMTA0N2VhYzQtZGU5Zi00MzNhLTk5ODgtOGNmMTk0Zjk0NThiIiwiZXhwIjoxNzI3NTIwMTA0LCJpYXQiOjE2OTYyMzg1OTQsInNjb3BlIjoiW3JlYWRdIn0.GqJWdyNknqI5yL5Rcw-gZljzfswypir1JYu41gb9xUIyB2nbQ2WgNuRCPCvPdTsJOZl4xYXvj02YcbaPwQOQCqTqbmH8LqpIYVobdoBHQegSvCKgiL9T-JuO16t70tbp144Mr3FsdXLvgEhF8LGjiTjgg1U150nonRb2q2h0rki4GRVMTWJT21oe0T-2SqqSTSrwVerqPRXW5XAH3YDXUC54ADt2ojM-R3z4eqS9it5Cec7pPtFa62hE8_iTc_pH_QwW8xa5RGvpUmmRFcKv78f4WUJJY3yj-NO5tdtzirOhIEJCNnODZt2zTO0aGqosnkjvBfFFy_EoQl2uqqHqqQ",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"17aebfa6-8ec7-49ec-a2db-9448847809c6\",\n    \"password\": \"test\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/friend/delete/08b3ba8f-1d05-4203-b7bf-89cf97115035",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"friend",
+								"delete",
+								"08b3ba8f-1d05-4203-b7bf-89cf97115035"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "0"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 29 Sep 2023 10:47:12 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "friend/set",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJzZWxmIiwic3ViIjoiMTA0N2VhYzQtZGU5Zi00MzNhLTk5ODgtOGNmMTk0Zjk0NThiIiwiZXhwIjoxNzI3NTIwMTA0LCJpYXQiOjE2OTYyMzg1OTQsInNjb3BlIjoiW3JlYWRdIn0.GqJWdyNknqI5yL5Rcw-gZljzfswypir1JYu41gb9xUIyB2nbQ2WgNuRCPCvPdTsJOZl4xYXvj02YcbaPwQOQCqTqbmH8LqpIYVobdoBHQegSvCKgiL9T-JuO16t70tbp144Mr3FsdXLvgEhF8LGjiTjgg1U150nonRb2q2h0rki4GRVMTWJT21oe0T-2SqqSTSrwVerqPRXW5XAH3YDXUC54ADt2ojM-R3z4eqS9it5Cec7pPtFa62hE8_iTc_pH_QwW8xa5RGvpUmmRFcKv78f4WUJJY3yj-NO5tdtzirOhIEJCNnODZt2zTO0aGqosnkjvBfFFy_EoQl2uqqHqqQ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/friend/set/08b3ba8f-1d05-4203-b7bf-89cf97115035",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"friend",
+						"set",
+						"08b3ba8f-1d05-4203-b7bf-89cf97115035"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "set",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJzZWxmIiwic3ViIjoiMTA0N2VhYzQtZGU5Zi00MzNhLTk5ODgtOGNmMTk0Zjk0NThiIiwiZXhwIjoxNzI3NTIwMTA0LCJpYXQiOjE2OTYyMzg1OTQsInNjb3BlIjoiW3JlYWRdIn0.GqJWdyNknqI5yL5Rcw-gZljzfswypir1JYu41gb9xUIyB2nbQ2WgNuRCPCvPdTsJOZl4xYXvj02YcbaPwQOQCqTqbmH8LqpIYVobdoBHQegSvCKgiL9T-JuO16t70tbp144Mr3FsdXLvgEhF8LGjiTjgg1U150nonRb2q2h0rki4GRVMTWJT21oe0T-2SqqSTSrwVerqPRXW5XAH3YDXUC54ADt2ojM-R3z4eqS9it5Cec7pPtFa62hE8_iTc_pH_QwW8xa5RGvpUmmRFcKv78f4WUJJY3yj-NO5tdtzirOhIEJCNnODZt2zTO0aGqosnkjvBfFFy_EoQl2uqqHqqQ",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"17aebfa6-8ec7-49ec-a2db-9448847809c6\",\n    \"password\": \"test\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/friend/set/08b3ba8f-1d05-4203-b7bf-89cf97115035",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"friend",
+								"set",
+								"08b3ba8f-1d05-4203-b7bf-89cf97115035"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "0"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 29 Sep 2023 10:48:07 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		}
+	]
+}
