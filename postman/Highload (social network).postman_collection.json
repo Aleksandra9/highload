@@ -409,7 +409,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "bearer eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJzZWxmIiwic3ViIjoiZmQzODBhOGQtNzQ2MS00NDVmLWExYTgtYjQ4NGY3OWU4N2UzIiwiZXhwIjoxNzI3NTIwMTA0LCJpYXQiOjE2OTU5ODQyNjgsInNjb3BlIjoiW3JlYWRdIn0.PZ2dMVAAZPlv9wR_H8dfmXzJJj7d7Qf6sOgzChzbeGrvdpV2EFjFYrejlI0kudqEt9022C-2RYX7j0G_3_LsBjlahJhtuu7p8UIhM9at8_uNbxz6DLpVmixOi0eGUF4bEilvN_Ek7PdIevd7ReAE5T6B8ePvn5g9Kz43-cLj7X_idGMrTuYWpW1GRZTjqE_u9f7RXNYkLxC2yYpO4j9FtIfKKKsin8KTBfAd4LkVBHTtV3Lon82h8lM8oVYftGyLwW_rqCucnIvvRUqKbzmi_aZrHcHMbgHBo35kWs8SEp1YxxobUDMkp3DJH67dwEyrjfHgiR6vyJ6UG75PgyMBHg",
+						"value": "bearer eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJzZWxmIiwic3ViIjoiMGQzNDZlOGUtOTNjZC00ZDZiLWFjNzMtMTFlNTEwMzVhNjBhIiwiZXhwIjoxNzI3NTIwMTA0LCJpYXQiOjE2OTY5MzI5MDQsInNjb3BlIjoiW3JlYWRdIn0.hLLRwf8PWrXKzu3mhNHY7W0pRR0IRc42LyR_UDjNDi919r_oaC8wYOvfrJ2ET-z9Z1tQMLZDI8VKvXcRgt87FiA9yIygYaRhNluNd2Oz3w_KMUU1YemVOUvy2-YyyfK08W2mmztesyXp5E3wapshH097rm07xyxDdUt8AFQRlt7kEiZRbCeDiiQXB4PoXywtL0PJvzyEZPFSISQMS8YjS6OpVGCCgBp0ooDRF1e39RcdXD18tSBuWV6T6YpQ2nPpCpndWYGzDOOrJnaet8mNPeTx2-YdFA8AzCtij4dPkMxfkX6E7Z_Tal4n63kU8tS-Xc87k_nXf71QBefBJyJMVQ",
 						"type": "text"
 					}
 				],
@@ -443,7 +443,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "bearer eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJzZWxmIiwic3ViIjoiZmQzODBhOGQtNzQ2MS00NDVmLWExYTgtYjQ4NGY3OWU4N2UzIiwiZXhwIjoxNzI3NTIwMTA0LCJpYXQiOjE2OTU5ODQyNjgsInNjb3BlIjoiW3JlYWRdIn0.PZ2dMVAAZPlv9wR_H8dfmXzJJj7d7Qf6sOgzChzbeGrvdpV2EFjFYrejlI0kudqEt9022C-2RYX7j0G_3_LsBjlahJhtuu7p8UIhM9at8_uNbxz6DLpVmixOi0eGUF4bEilvN_Ek7PdIevd7ReAE5T6B8ePvn5g9Kz43-cLj7X_idGMrTuYWpW1GRZTjqE_u9f7RXNYkLxC2yYpO4j9FtIfKKKsin8KTBfAd4LkVBHTtV3Lon82h8lM8oVYftGyLwW_rqCucnIvvRUqKbzmi_aZrHcHMbgHBo35kWs8SEp1YxxobUDMkp3DJH67dwEyrjfHgiR6vyJ6UG75PgyMBHg",
+								"value": "bearer eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJzZWxmIiwic3ViIjoiMGQzNDZlOGUtOTNjZC00ZDZiLWFjNzMtMTFlNTEwMzVhNjBhIiwiZXhwIjoxNzI3NTIwMTA0LCJpYXQiOjE2OTY5MzI5MDQsInNjb3BlIjoiW3JlYWRdIn0.hLLRwf8PWrXKzu3mhNHY7W0pRR0IRc42LyR_UDjNDi919r_oaC8wYOvfrJ2ET-z9Z1tQMLZDI8VKvXcRgt87FiA9yIygYaRhNluNd2Oz3w_KMUU1YemVOUvy2-YyyfK08W2mmztesyXp5E3wapshH097rm07xyxDdUt8AFQRlt7kEiZRbCeDiiQXB4PoXywtL0PJvzyEZPFSISQMS8YjS6OpVGCCgBp0ooDRF1e39RcdXD18tSBuWV6T6YpQ2nPpCpndWYGzDOOrJnaet8mNPeTx2-YdFA8AzCtij4dPkMxfkX6E7Z_Tal4n63kU8tS-Xc87k_nXf71QBefBJyJMVQ",
 								"type": "text"
 							}
 						],
@@ -1156,6 +1156,69 @@
 					"body": null
 				}
 			]
+		},
+		{
+			"name": "Получение диалога",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJzZWxmIiwic3ViIjoiMTA0N2VhYzQtZGU5Zi00MzNhLTk5ODgtOGNmMTk0Zjk0NThiIiwiZXhwIjoxNzI3NTIwMTA0LCJpYXQiOjE2OTYyMzg1OTQsInNjb3BlIjoiW3JlYWRdIn0.GqJWdyNknqI5yL5Rcw-gZljzfswypir1JYu41gb9xUIyB2nbQ2WgNuRCPCvPdTsJOZl4xYXvj02YcbaPwQOQCqTqbmH8LqpIYVobdoBHQegSvCKgiL9T-JuO16t70tbp144Mr3FsdXLvgEhF8LGjiTjgg1U150nonRb2q2h0rki4GRVMTWJT21oe0T-2SqqSTSrwVerqPRXW5XAH3YDXUC54ADt2ojM-R3z4eqS9it5Cec7pPtFa62hE8_iTc_pH_QwW8xa5RGvpUmmRFcKv78f4WUJJY3yj-NO5tdtzirOhIEJCNnODZt2zTO0aGqosnkjvBfFFy_EoQl2uqqHqqQ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/dialog/02a46d28-b951-4068-bbc2-f858f7fe3e23/list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dialog",
+						"02a46d28-b951-4068-bbc2-f858f7fe3e23",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Отправка сообщения",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJzZWxmIiwic3ViIjoiMTA0N2VhYzQtZGU5Zi00MzNhLTk5ODgtOGNmMTk0Zjk0NThiIiwiZXhwIjoxNzI3NTIwMTA0LCJpYXQiOjE2OTYyMzg1OTQsInNjb3BlIjoiW3JlYWRdIn0.GqJWdyNknqI5yL5Rcw-gZljzfswypir1JYu41gb9xUIyB2nbQ2WgNuRCPCvPdTsJOZl4xYXvj02YcbaPwQOQCqTqbmH8LqpIYVobdoBHQegSvCKgiL9T-JuO16t70tbp144Mr3FsdXLvgEhF8LGjiTjgg1U150nonRb2q2h0rki4GRVMTWJT21oe0T-2SqqSTSrwVerqPRXW5XAH3YDXUC54ADt2ojM-R3z4eqS9it5Cec7pPtFa62hE8_iTc_pH_QwW8xa5RGvpUmmRFcKv78f4WUJJY3yj-NO5tdtzirOhIEJCNnODZt2zTO0aGqosnkjvBfFFy_EoQl2uqqHqqQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"text\" : \"message\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/dialog/02a46d28-b951-4068-bbc2-f858f7fe3e23/send",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dialog",
+						"02a46d28-b951-4068-bbc2-f858f7fe3e23",
+						"send"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
