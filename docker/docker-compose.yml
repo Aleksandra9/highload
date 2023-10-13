@@ -1,17 +1,27 @@
 version: '2.1'
 
 services:
-  app:
-    image: 'network:latest'
+  network-gateway:
+    image: 'network-gateway:latest'
     build:
-      context: .
+      context: ./gateway
     ports:
       - "8080:8080"
-    container_name: highload
+    container_name: network_gateway
+    environment:
+      - NETWORK_URL=http://social-network:8081
+      - DIALOGUE_URL=http://network-dialogue:8082
+  social-network:
+    image: 'social-network:latest'
+    build:
+      context: ./network
+    container_name: social_network
     depends_on:
       db:
         condition: service_started
       redis:
+        condition: service_started
+      kafka:
         condition: service_started
     environment:
       - POSTGRES_URL=jdbc:postgresql://db:5432/postgres
@@ -20,7 +30,7 @@ services:
       - REDIS_URL=redis
       - REDIS_HOST=redis
       - REDIS_PORT=6379
-      - spring.redis.host=redis
+      - KAFKA_URL=kafka:9092
 
   db:
     image: 'postgres:16-alpine'
@@ -46,3 +56,70 @@ services:
     ports:
       - "6379:6379"
     command: redis-server
+
+  zookeeper:
+    image: confluentinc/cp-zookeeper:latest
+    container_name: zookeeper1
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 2181
+      ZOOKEEPER_TICK_TIME: 2000
+    ports:
+      - 22181:2181
+
+  kafka:
+    image: confluentinc/cp-kafka:latest
+    container_name: kafka1
+    depends_on:
+      - zookeeper
+    ports:
+      - 9092:9092
+    environment:
+      KAFKA_BROKER_ID: 1
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092,PLAINTEXT_HOST://localhost:29092
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_HOST:PLAINTEXT
+      KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+
+  network-dialogue:
+    image: 'network-dialogue:latest'
+    build:
+      context: ./dialogue
+    container_name: "network_dialogue"
+    depends_on:
+      [ master ]
+    environment:
+      - NETWORK_URL=http://network-gateway:8080
+      - POSTGRES_URL=jdbc:postgresql://citus_master:5432/postgres
+      - POSTGRES_USERNAME=postgres
+      - POSTGRES_PASSWORD=postgres
+  master:
+    container_name: "citus_master"
+    image: "citusdata/citus:12.0.0"
+    ports: [ "5432:5432" ]
+    labels: [ "com.citusdata.role=Master" ]
+    environment: &AUTH
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "postgres"
+      PGUSER: "postgres"
+      PGPASSWORD: "postgres"
+      POSTGRES_HOST_AUTH_METHOD: "trust"
+  worker:
+    container_name: "citus_worker"
+    image: "citusdata/citus:12.0.0"
+    labels: [ "com.citusdata.role=Worker" ]
+    depends_on: [ manager ]
+    environment: *AUTH
+    command: "/wait-for-manager.sh"
+    volumes:
+      - healthcheck-volume:/healthcheck
+  manager:
+    container_name: "citus_manager"
+    image: "citusdata/membership-manager:0.3.0"
+    volumes:
+      - "${DOCKER_SOCK:-/var/run/docker.sock}:/var/run/docker.sock"
+      - healthcheck-volume:/healthcheck
+    depends_on: [ master ]
+    environment: *AUTH
+volumes:
+  healthcheck-volume:
