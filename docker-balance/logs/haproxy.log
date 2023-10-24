@@ -1,0 +1,11 @@
+[NOTICE]   (1) : New worker #1 (8) forked
+[WARNING]  (8) : Server postgresql_servers/db01 is DOWN, reason: Layer4 connection problem, info: "Connection refused", check duration: 4ms. 2 active and 0 backup servers left. 0 sessions active, 0 requeued, 0 remaining in queue.
+[WARNING]  (8) : Server postgresql_servers/db02 is DOWN, reason: Layer4 connection problem, info: "Connection refused", check duration: 0ms. 1 active and 0 backup servers left. 0 sessions active, 0 requeued, 0 remaining in queue.
+[WARNING]  (8) : Server postgresql_servers/db03 is DOWN, reason: Layer4 connection problem, info: "Connection refused", check duration: 0ms. 0 active and 0 backup servers left. 0 sessions active, 0 requeued, 0 remaining in queue.
+[NOTICE]   (8) : haproxy version is 2.4.24-d175670
+[NOTICE]   (8) : path to executable is /usr/local/sbin/haproxy
+[ALERT]    (8) : backend 'postgresql_servers' has no server available!
+[WARNING]  (8) : Server postgresql_servers/db01 is UP, reason: Layer4 check passed, check duration: 0ms. 1 active and 0 backup servers online. 0 sessions requeued, 0 total in queue.
+[WARNING]  (8) : Server postgresql_servers/db02 is UP, reason: Layer4 check passed, check duration: 0ms. 2 active and 0 backup servers online. 0 sessions requeued, 0 total in queue.
+[WARNING]  (8) : Server postgresql_servers/db03 is UP, reason: Layer4 check passed, check duration: 0ms. 3 active and 0 backup servers online. 0 sessions requeued, 0 total in queue.
+[WARNING]  (8) : Server postgresql_servers/db03 is DOWN, reason: Layer4 timeout, check duration: 2001ms. 2 active and 0 backup servers left. 1 sessions active, 0 requeued, 0 remaining in queue.
